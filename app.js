@@ -40,7 +40,7 @@ app.use("/users", userRoutes);
 // app.get("*", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "frontend", "public", "index.html"));
 // });
-
+app.use(express.static("public"));
 /** 404 handler */
 
 app.use(function (req, res, next) {
