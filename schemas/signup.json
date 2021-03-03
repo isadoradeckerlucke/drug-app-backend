@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "username": "isadoradl5",
+            "password": "testpassword",
+            "email": "isadoradl5@gmail.com"
+        }
+    ],
+    "required": [
+        "username",
+        "password",
+        "email"
+    ],
+    "properties": {
+        "username": {
+            "$id": "#/properties/username",
+            "type": "string",
+            "title": "The username schema",
+            "default": "",
+            "examples": [
+                "isadoradl5"
+            ]
+        },
+        "password": {
+            "$id": "#/properties/password",
+            "type": "string",
+            "title": "The password schema",
+            "default": "",
+            "examples": [
+                "testpassword"
+            ]
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "The email schema",
+            "format": "email",
+            "default": "",
+            "examples": [
+                "isadoradl5@gmail.com"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
